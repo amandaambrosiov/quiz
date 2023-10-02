@@ -12,22 +12,20 @@ const timeCount = document.querySelector(".timer .timer_sec");
 
 // o botão para começar o quiz
 start_btn.onclick = ()=>{
-    info_box.classList.add("activeInfo"); //show info box
+    info_box.classList.add("activeInfo"); //mostra info box
 }
 
 // botão para sair do quiz
 exit_btn.onclick = ()=>{
-    info_box.classList.remove("activeInfo"); //hide info box
+    info_box.classList.remove("activeInfo"); //esconde info box
 }
 
 // continuar no quiz
 continue_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //esconde a info box
     quiz_box.classList.add("activeQuiz"); //mostra o quiz box
-    showQuetions(0); //chamando show Qestions function
+    showQuetions(0); //chamando mostrar Questions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(15); //calling startTimer function
-    startTimerLine(0); //calling startTimerLine function
 }
 
 let timeValue =  15;
