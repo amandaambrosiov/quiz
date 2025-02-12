@@ -106,13 +106,13 @@ function showQuetions(index){
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
-// creating the new div tags which for icons
+// criando a nova tag das divs com icones
 let tickIconTag = '<div><i class="fas fa-check"></i></div>';
 let crossIconTag = '<div><i class="fas fa-times"></i></div>';
 
-//if user clicked on option
+// se o usuario clciar em um opção
 function optionSelected(answer){
-    clearInterval(counter); //clear counter
+    clearInterval(counter); //clear contador
     clearInterval(counterLine); //clear counterLine
     let userAns = answer.textContent; //getting user selected option
     let correcAns = questions[que_count].answer; //getting correct answer from array
